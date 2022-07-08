@@ -55,3 +55,4 @@ pandas
 seaborn
 install
 sklearn
+tqdm
