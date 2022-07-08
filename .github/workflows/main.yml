@@ -38,10 +38,10 @@ jobs:
         run: pip install -r requirements.txt
         
       - name: Exeute Notebook # Performing a Jupyter Notebook
-        run: jupyter-nbconvert --execute plot_iris_exercise.ipynb --to html
+        run: jupyter-nbconvert --execute Domashka_2.ipynb --to html
         
       - name: Upload a Build Artifact # Uploading the output of a notebook (task artifact) to an html file
         uses: actions/upload-artifact@v3.1.0
         with:
           name: Artifact
-          path: plot_iris_exercise.html
+          path:  Domashka_2.html
