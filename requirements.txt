@@ -54,3 +54,4 @@ matplotlib
 pandas
 seaborn
 install
+sklearn
