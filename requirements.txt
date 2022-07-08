@@ -49,3 +49,8 @@ colorama
 backcall
 ipython
 ipykernel
+jupyterlab
+matplotlib
+pandas
+seaborn
+install
