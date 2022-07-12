@@ -5,3 +5,8 @@ matplotlib
 sklearn
 ipykernel
 tqdm
+pandas
+seaborn
+install
+jupyterlab
+kaggle
