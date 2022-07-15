@@ -47,7 +47,7 @@ jobs:
               
       - name: Upload kaggle.json
         run: |
-              kaggle::Authentication::with_credentials("${{ secrets.KAGGLE_USERNAME }}", "${{ secrets.KAGGLE_PASSWRD }}");
+              kaggle::Authentication::with_credentials("${{ secrets.KAGGLE_USERNAME }}", "${{ secrets.KAGGLE_KEY }}");
         
       - name: Submit Predictions
         run: kaggle competitions submit -c titanic -f ./Kaggle/my_submission.csv -m "Submition from GitHub"
