@@ -37,8 +37,8 @@ jobs:
       - name: Install Kaggle
         run: pip install -q kaggle
         
-      - name: Install Kaggle
-        run: files.upload()
+      - name: Upload kaggle.json
+        run: files.upload(kaggle.json)
       
       - name: Exeute Notebook
         run: jupyter-execute domashka-5.ipynb
