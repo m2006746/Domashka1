@@ -44,11 +44,7 @@ jobs:
         run: |
               echo "KAGGLE_USERNAME=${{ secrets.KAGGLE_USERNAME }}" >> $GITHUB_ENV
               echo "KAGGLE_PASSWRD=${{ secrets.KAGGLE_PASSWRD }}" >> $GITHUB_ENV
-              
-      - name: Upload kaggle.json
-        run: |
-              kaggle::Authentication::with_credentials("m2006746", "7f887a9e144e21c23129a4d52c558478");
-        
+                   
       - name: Submit Predictions
         run: kaggle competitions submit -c titanic -f ./Kaggle/my_submission.csv -m "Submition from GitHub"
           
