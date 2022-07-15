@@ -43,7 +43,8 @@ jobs:
               echo "KAGGLE_PASSWRD=${{ secrets.KAGGLE_PASSWRD }}" >> $GITHUB_ENV
               
       - name: Submit Predictions
-        run: kaggle competitions submit -c titanic -f ./Kaggle/my_submission.csv -m "Submition from GitHub"
+        run: kaggle kernels output m2006746/domashka-5 -p /path/to/dest
+        #run: kaggle competitions submit -c titanic -f ./Kaggle/my_submission.csv -m "Submition from GitHub"
           
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.0
