@@ -44,10 +44,7 @@ jobs:
         run: |
               echo "KAGGLE_USERNAME=${{ secrets.KAGGLE_USERNAME }}" >> $GITHUB_ENV
               echo "KAGGLE_PASSWRD=${{ secrets.KAGGLE_PASSWRD }}" >> $GITHUB_ENV
-              
-      - name: Submit Predictions
-        run: chmod 600 ./.kaggle/kaggle.json
-                   
+                               
       - name: Submit Predictions
         run: kaggle competitions submit -c titanic -f ./Kaggle/my_submission.csv -m "Submition from GitHub to Kaggle"
           
